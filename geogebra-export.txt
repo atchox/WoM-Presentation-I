@@ -1,0 +1,71 @@
+\documentclass[10pt]{article}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+\definecolor{qqwuqq}{rgb}{0,0.39215686274509803,0}
+\definecolor{ffvvqq}{rgb}{1,0.3333333333333333,0}
+\definecolor{ccqqqq}{rgb}{0.8,0,0}
+\definecolor{uuuuuu}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666}
+\definecolor{ududff}{rgb}{0.30196078431372547,0.30196078431372547,1}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+\begin{axis}[
+x=1cm,y=1cm,
+axis lines=middle,
+ymajorgrids=true,
+xmajorgrids=true,
+xmin=-0.5324554923487272,
+xmax=0.5361730670703689,
+ymin=-0.5345547584377641,
+ymax=0.5233722274249177,
+xtick={-0.5,-0.4,...,0.5000000000000001},
+ytick={-0.5,-0.4,...,0.5000000000000001},]
+\clip(-0.5324554923487272,-0.5345547584377641) rectangle (0.5361730670703689,0.5233722274249177);
+\draw [line width=3.2pt,dash pattern=on 1pt off 1pt,color=ccqqqq] (-0.5,0.5)-- (0.5,0.5);
+\draw [samples=50,rotate around={-180:(0,0.25)},xshift=0cm,yshift=0.25cm,line width=2pt,color=ffvvqq,domain=-2:2)] plot (\x,{(\x)^2/2/0.5});
+\draw [line width=3.2pt,dash pattern=on 1pt off 1pt,color=ccqqqq] (0.5,0.5)-- (0.5,-0.5);
+\draw [samples=50,rotate around={-270:(0.25,0)},xshift=0.25cm,yshift=0cm,line width=2pt,dotted,color=ffvvqq,domain=-2:2)] plot (\x,{(\x)^2/2/0.5});
+\draw [line width=3.2pt,dash pattern=on 1pt off 1pt,color=ccqqqq] (0.5,-0.5)-- (-0.5,-0.5);
+\draw [line width=3.2pt,dash pattern=on 1pt off 1pt,color=ccqqqq] (-0.5,-0.5)-- (-0.5,0.5);
+\draw [samples=50,rotate around={-90:(-0.25,0)},xshift=-0.25cm,yshift=0cm,line width=2pt,color=ffvvqq,domain=-2:2)] plot (\x,{(\x)^2/2/0.5});
+\draw [samples=50,rotate around={0:(0,-0.25)},xshift=0cm,yshift=-0.25cm,line width=2pt,color=ffvvqq,domain=-2:2)] plot (\x,{(\x)^2/2/0.5});
+\draw [line width=2pt,color=ffvvqq] (-0.20710678118654754,0.20710678118654754)-- (0.20710678118654754,0.20710678118654754);
+\draw [line width=2pt,dotted,color=ffvvqq] (0.20710678118654754,0.20710678118654754)-- (0.20710678118654754,-0.20710678118654754);
+\draw [line width=2pt,color=ffvvqq] (0.20710678118654754,-0.20710678118654754)-- (-0.20710678118654754,-0.20710678118654754);
+\draw [line width=2pt,color=ffvvqq] (-0.20710678118654754,-0.20710678118654754)-- (-0.20710678118654754,0.20710678118654754);
+\draw [line width=2pt,color=qqwuqq,domain=-0.5324554923487272:0.5361730670703689] plot(\x,{(-0--0.20710678118654754*\x)/0.20710678118654754});
+\begin{scriptsize}
+\draw [fill=ududff] (-0.5,0.5) circle (2.5pt);
+\draw[color=ududff] (-0.4881204019007247,0.5164926444243656) node {$D$};
+\draw [fill=uuuuuu] (0,0) circle (2pt);
+\draw[color=uuuuuu] (0.0117959628060628,0.030335445718682325) node {$O$};
+\draw [fill=ududff] (0.5,-0.5) circle (2.5pt);
+\draw[color=ududff] (0.5117123275128503,-0.4665233265434154) node {$B$};
+\draw [fill=ududff] (0.5,0.5) circle (2.5pt);
+\draw[color=ududff] (0.5117123275128503,0.5164926444243656) node {$A$};
+\draw [fill=ududff] (-0.5,-0.5) circle (2.5pt);
+\draw[color=ududff] (-0.4881204019007247,-0.4665233265434154) node {$C$};
+\draw [fill=uuuuuu] (-1.2071067811865475,1.2071067811865475) circle (2pt);
+\draw[color=uuuuuu] (-0.355115130556717,0.5164926444243656) node {$G$};
+\draw [fill=uuuuuu] (0.20710678118654754,-0.20710678118654754) circle (2pt);
+\draw[color=uuuuuu] (0.21971224904497139,-0.17758084052022624) node {$Q$};
+\draw [fill=uuuuuu] (0.25,0) circle (2pt);
+\draw[color=uuuuuu] (0.262518543270629,0.030335445718682325) node {$I$};
+\draw [fill=uuuuuu] (-0.20710678118654754,0.20710678118654754) circle (2pt);
+\draw[color=uuuuuu] (-0.19459152721050083,0.236722935735246) node {$S$};
+\draw [fill=uuuuuu] (1.2071067811865475,-1.2071067811865475) circle (2pt);
+\draw[color=uuuuuu] (0.5606338066278876,-0.4986280472126586) node {$K$};
+\draw [fill=uuuuuu] (-0.20710678118654754,-0.20710678118654754) circle (2pt);
+\draw[color=uuuuuu] (-0.19459152721050083,-0.17758084052022624) node {$R$};
+\draw [fill=uuuuuu] (1.2071067811865475,1.2071067811865475) circle (2pt);
+\draw[color=uuuuuu] (0.6676495421920318,0.5164926444243656) node {$M$};
+\draw [fill=uuuuuu] (-1.2071067811865475,-1.2071067811865475) circle (2pt);
+\draw[color=uuuuuu] (-0.5217539187923128,-0.48639767743389933) node {$E$};
+\draw [fill=uuuuuu] (0.20710678118654754,0.20710678118654754) circle (2pt);
+\draw[color=uuuuuu] (0.21971224904497139,0.236722935735246) node {$P$};
+\end{scriptsize}
+\end{axis}
+\end{tikzpicture}
+\end{document}
