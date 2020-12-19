@@ -5,8 +5,8 @@ the Writing of Mathematics course at ISI Bangalore. Hopefully, this is a fair gu
 draw some inspiration for your own presentation.
 
 The repository mainly includes:
-i) The TeX file for the presentation and the pdf.
-ii) A C program to approximate a result.
-iii) CSV data sheets which contain every outcome, probabilities for each experiment, averages and standard deviations.
+1) The TeX file for the presentation and the pdf.
+2) A C program to approximate a result.
+3) CSV data sheets which contain every outcome, probabilities for each experiment, averages and standard deviations.
 
 - Atreya
