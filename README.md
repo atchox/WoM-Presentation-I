@@ -7,6 +7,7 @@ draw some inspiration for your own presentation.
 The repository mainly includes:
 1) The TeX file for the presentation and the pdf.
 2) A C program to approximate a result.
-3) CSV data sheets which contain every outcome, probabilities for each experiment, averages and standard deviations.
+3) CSV data sheets which contain every outcome, probabilities for each experiment, percentage deviation from the actual value, averages and standard deviations.
+    3.1) I removed the outcomes from some of the larger data sheets as they were getting a bit too big.
 
 - Atreya
