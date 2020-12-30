@@ -13,7 +13,7 @@
 
 \section{Introduction}
 \textbf{The Problem:}\\
-\textit{A dart is thrown at a unit square. The probability of hitting a point closer to the center than to any of the edges equals}
+\textit{A dart is thrown at a unit square. The probability of hitting a point closer to the centre than to any of the edges equals}
 
 \begin{equation*}
   \frac{4\sqrt{2}-5}{3}
@@ -22,9 +22,9 @@
 We assume \textit{uniform} distribution. Therefore, we can say that the probability of landing the dart on two regions of equal area is equal. To find the probability, we must first find the region where the landing of the dart is acceptable. Then the required probability is the ratio of the areas of target region and the dart board.
 
 \section{The Target}
-To define the boundary of the region, we consider those points which are at equal distance from the center of the board and a particular edge. We observe that boundaries are defined by portions of parabolas.
+To define the boundary of the region, we consider those points which are at equal distance from the centre of the board and a particular edge. We observe that boundaries are defined by portions of parabolas.
 
-Figure 1 shows the upper right quarter of the board. The red dashed line represents the $1\times1$ board. We set up a co-ordinate system centered at (0,0) co-inciding with the center of the board. The boundaries of the dart-board are:
+Figure 1 shows the upper right quarter of the board. The red dashed line represents the $1\times1$ board. We set up a co-ordinate system centred at (0,0) co-inciding with the centre of the board. The boundaries of the dart-board are:
 
 \begin{align*}
 y &= \frac{1}{2}\\
@@ -92,7 +92,7 @@ Therefore, the area of the Target Region:
 \section{Answer and a Small Computation}
 The required probability is given by the ratio of the area of the target region obtained in (4) to the area of the dart board which is a unit square.\\
 
-Hence, the probability of landing the dart closer to the center than any edge is $$\frac{4\sqrt{2} - 5}{3}$$\\
+Hence, the probability of landing the dart closer to the centre than any edge is $$\frac{4\sqrt{2} - 5}{3}$$\\
 which is what we had to prove.\\
 
 I also tried to approximately verify our results by writing a program that generates random co-ordinates, checks if they are in the target region, and calculates the probability accordingly. It generates N such random co-ordinates where N is supplied by the user.\\
